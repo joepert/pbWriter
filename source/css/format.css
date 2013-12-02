@@ -1,0 +1,23 @@
+/*
+<div class="pbwriter-button format grouped"><p><i>p</i><em></em></p>
+	
+	<span class="rollout format">
+		<span class="inner">
+			<div class="pbwriter-button format"><p><i>p</i><em></em></p></div>
+			<div class="pbwriter-button"><p><i>h1</i><em></em></p></div>
+			<div class="pbwriter-button"><p><i>h2</i><em></em></p></div>
+			<div class="pbwriter-button"><p><i>h3</i><em></em></p></div>
+			<div class="pbwriter-button"><p><i>h4</i><em></em></p></div>
+			<div class="pbwriter-button"><p><i>h5</i><em></em></p></div>
+		</span>
+	</span>
+
+</div>
+*/
+
+.pbwriter .pbwriter-button .rollout.format .inner {
+	
+}
+.pbwriter .pbwriter-button .rollout.format .pbwriter-button > p > i {
+	background: none;
+}

@@ -1,0 +1,134 @@
+/*
+<div class="pbwriter-button image attach grouped"><p><i></i><em></em></p>
+
+	<span class="rollout attach">
+		<span class="inner">
+			<div class="pbwriter-button image"><p>Image<i></i><em></em></p></div>
+			<div class="pbwriter-button audio"><p>Sound<i></i><em></em></p></div>
+			<div class="pbwriter-button video"><p>Video<i></i><em></em></p></div>
+			<div class="pbwriter-button flash selected"><p>Flash<i></i><em></em></p></div>
+			<div class="pbwriter-button audioexternal"><p>Create Audio Softlink<i></i><em></em></p></div>
+			<div class="pbwriter-button videoexternal"><p>Create Video Softlink<i></i><em></em></p></div>
+		</span>
+	</span>
+
+	<span class="rollout softlink-audio">
+		<span class="inner">
+
+			<em>Create soft link audio</em>
+			<span class="close"></span>
+			<span class="input"><input type="text" value="http://" /></span>
+			<span class="submit">ok</span>
+
+		</span>
+	</span>
+
+	<span class="rollout softlink-video">
+		<span class="inner">
+
+			<span class="close"></span>
+
+			<span class="input"><input type="text" value="http://" /></span>
+			<span class="submit"></span>
+			
+			<label for="openwindow"><input id="openwindow" type="checkbox" /><b>Open link in Nieuw Venster</b></label>
+
+		</span>
+	</span>
+
+</div>
+
+*/
+
+/* attach */
+.pbwriter .pbwriter-button .rollout.attach .pbwriter-button { float: none; }
+.pbwriter .pbwriter-button .rollout.attach .pbwriter-button > p {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: auto;
+	text-align: left;
+	padding: 0 5px 0 27px;
+}
+.pbwriter .pbwriter-button .rollout.attach .pbwriter-button > p > i {
+	right: auto;
+	width: 22px;
+}
+
+/* softlink-audio */
+.pbwriter .pbwriter-button > .rollout.softlink-audio .inner {
+	top: 200px;
+	min-width: 380px;
+	padding: 5px 10px;
+}
+.pbwriter .pbwriter-button > .rollout.softlink-audio .pbwriter-button { float: none; }
+.softlink-audio em {
+	display: block;
+	line-height: 22px;
+	min-height: 22px;
+	margin-bottom: 5px;
+	font-style: normal;
+	font-weight: bold;
+}
+.softlink-audio .input {
+	display: block;
+	margin-right: 60px;
+	border: 1px solid #cccccc;
+	background: #ffffff;
+}
+.softlink-audio input[type="text"] {
+	width: 100%;
+	min-height: 22px;
+	line-height: 22px;
+	margin: 0;
+	padding: 0;
+	text-indent: 5px;
+	border: none;
+	font-size: 10px;
+	color: #222222;
+	background: none;
+}
+
+
+/* softlink-video */
+.pbwriter .pbwriter-button > .rollout.softlink-video .inner {
+	min-width: 380px;
+	padding: 5px 35px 5px 10px;
+}
+.pbwriter .pbwriter-button > .rollout.softlink-video .pbwriter-button { float: none; }
+.softlink-video em {
+	display: block;
+	line-height: 22px;
+	min-height: 22px;
+	margin-bottom: 5px;
+	font-style: normal;
+	font-weight: bold;
+}
+.softlink-video .input {
+	display: block;
+	margin-right: 60px;
+	border: 1px solid #cccccc;
+	background: #ffffff;
+}
+.softlink-video .input:nth-child(2) { margin-bottom: 5px; }
+
+.softlink-video input[type="text"] {
+	width: 100%;
+	min-height: 22px;
+	line-height: 22px;
+	margin: 0;
+	padding: 0;
+	text-indent: 5px;
+	border: none;
+	font-size: 10px;
+	color: #222222;
+	background: none;
+}
+.pbwriter .pbwriter-button > .rollout.softlink-video .submit {
+	top: 5px;
+	right: 35px;
+	bottom: auto;
+}
+
+
